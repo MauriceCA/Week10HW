@@ -1,0 +1,13 @@
+#info {
+    padding: 2vh;
+}
+
+body {
+    background-image: url(books.png);
+}
+
+
+header {
+    text-align: center;
+    font-weight: bold;
+}

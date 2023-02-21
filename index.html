@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="container" id="info-form">
+        <br>
+        <!--Page Header-->
+        <header class="container">
+            <h1>Recommended Book List</h1>
+            <p>Do you have a book you just read or audiobook you just listened to that you're just dying to share? <br>
+            Share it here! <br>
+            </p>
+        </header>
+        <!--card Start-->
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="new-start-date">Today's Date</label>
+                            <input type="date" class='form-control' name="" id="new-start-date">
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="submitted-by">Submitted by:</label>
+                            <input type="text" class='form-control' name="" id="submitted-by" placeholder="Your name">
+                        </div>
+                    </div>
+                </div>
+                <!--Title and Author-->
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="title">Title of the book</label>
+                            <input type="text" class='form-control' name="" id="title" placeholder="Title">
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="author">Author</label>
+                            <input type="text" class='form-control' name="" id="author" placeholder="Author">
+                        </div>
+                    </div>
+                </div>
+                <!--About the Book-->
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="media-type">Media</label>
+                            <input type="test" class='form-control' name="" id="media-type" placeholder="Book or Audiobook">
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="warning">Any Caution or Trigger Warning</label>
+                            <input type="text" class='form-control' name="" id="warning" placeholder="Any Caution or Trigger Warning">
+                        </div>
+                    </div>
+                </div>
+                <!--Why you are recommending-->
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="info">Why are you recommending this book?</label>
+                            <textarea class='form-control' name="" id="info" rows="3" placeholder="Tell us about this book"></textarea>
+                        </div>
+                    </div>
+                </div>
+                    <div>
+                    <button id="add" class="btn btn-primary form-control">Create</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Table Start-->
+    <div class="table-responsive">
+    <table id="list" class="table table-dark table-striped container-fluid">
+            <tr>
+                <th scope="col">Date Added</th>
+                <th scope="col">Title</th>
+                <th scope="col">Author</th>
+                <th scope="col">Media Type</th>
+                <th scope="col">Caution or Trigger Warning</th>
+                <th scope="col">Why this book?</th>
+                <th scope="col">Submitted by:</th>
+            </tr>
+    </table>
+    </div>
+    <!--Table End-->
+
+    <script src="index.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
